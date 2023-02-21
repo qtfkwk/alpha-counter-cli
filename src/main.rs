@@ -3,7 +3,7 @@ use alpha_counter::AlphaCounter;
 
 /// Alphabetic Counter (A, B, C, ..., X, Y, Z, AA, AB, AC, ...)
 #[derive(Parser)]
-#[clap(name = "alpha-counter")]
+#[command(version, name = "alpha-counter")]
 struct Cli {
     /// Kind (upper, lower)
     #[clap(short, long, default_value = "upper")]

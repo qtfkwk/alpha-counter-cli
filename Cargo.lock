@@ -10,7 +10,7 @@ checksum = "c3c88f3d1a0822f03e9b1a498865bcc117ba94cb16682a037341c0ef1ef1e837"
 
 [[package]]
 name = "alpha-counter-cli"
-version = "0.2.0"
+version = "0.2.1"
 dependencies = [
  "alpha-counter",
  "clap",

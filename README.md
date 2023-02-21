@@ -14,7 +14,7 @@ Stop printing after 100 iterations, or define an alternate number via the
 
 ```
 $ alpha-counter -V
-
+alpha-counter 0.2.1
 ```
 
 ```
@@ -29,6 +29,7 @@ Options:
   -t, --take <TAKE>          Take [default: 100]
   -a, --alphabet <ALPHABET>  Custom alphabet
   -h, --help                 Print help
+  -V, --version              Print version
 ```
 
 ```
