@@ -14,12 +14,12 @@ Stop printing after 100 iterations, or define an alternate number via the
 
 ```
 $ alpha-counter -V
-!run:./target/release/alpha-counter -V
+!run:../target/release/alpha-counter -V
 ```
 
 ```
 $ alpha-counter -h
-!run:./target/release/alpha-counter -h
+!run:../target/release/alpha-counter -h
 ```
 
 ```
@@ -46,11 +46,11 @@ cv
 
 ```
 $ alpha-counter --start 23 --take 6
-!run:./target/release/alpha-counter --start 23 --take 6
+!run:../target/release/alpha-counter --start 23 --take 6
 ```
 
 ```
 $ alpha-counter --alphabet abc --take 10
-!run:./target/release/alpha-counter --alphabet abc --take 10
+!run:../target/release/alpha-counter --alphabet abc --take 10
 ```
 

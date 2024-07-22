@@ -1,14 +1,14 @@
 [package]
 name = "alpha-counter-cli"
-version = "0.2.1"
+version = "0.2.2"
 edition = "2021"
 description = "Alphabetic counter"
 license = "MIT"
 repository = "https://github.com/qtfkwk/alpha-counter-cli"
 
 [dependencies]
-alpha-counter = "0.2.0"
-clap = { version = "4.1.6", features = ["derive"] }
+alpha-counter = "0.2.1"
+clap = { version = "4.5.9", features = ["derive"] }
 
 [[bin]]
 name = "alpha-counter"
