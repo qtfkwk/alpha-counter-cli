@@ -27,18 +27,20 @@ target/release/{dirname}
 
 * `Cargo.lock`
 * `Cargo.toml`
-* `src/**/*.rs`
+* `**/*.rs`
 
 ```
 cargo clippy -- -D clippy::all
 ```
- # test
+
+# test
+
 * `Cargo.lock`
 * `Cargo.toml`
-* `src/**/*.rs`
+* `**/*.rs`
 
 ```
-cargo test --release
+cargo test
 ```
 
 # build
@@ -49,7 +51,7 @@ cargo test --release
 
 * `Cargo.lock`
 * `Cargo.toml`
-* `src/**/*.rs`
+* `**/*.rs`
 * `README.md`
 
 ```
@@ -61,7 +63,7 @@ cargo build --release
 * `t/README.md`
 * `Cargo.toml`
 * `CHANGELOG.md`
-* `src/**/*.rs`
+* `**/*.rs`
 
 ```
 cargo build --release
@@ -130,6 +132,14 @@ cargo clean
 tokei; echo
 cocomo -o sloccount
 cocomo
+```
+
+# publish
+
+```
+cargo publish
+git push
+git push --tags
 ```
 
 # full
