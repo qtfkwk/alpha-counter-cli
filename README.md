@@ -14,7 +14,7 @@ Stop printing after 100 iterations, or define an alternate number via the
 
 ```
 $ alpha-counter -V
-alpha-counter 0.3.0
+alpha-counter 0.3.1
 ```
 
 ```

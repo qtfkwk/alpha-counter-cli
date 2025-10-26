@@ -8,4 +8,5 @@
     * 0.2.6 (2025-02-20): Update dependencies
     * 0.2.7 (2025-04-16): Update dependencies
 * 0.3.0 (2025-08-27): Update dependencies; 2024 edition
+    * 0.3.1 (2025-10-26): Update dependencies
 
