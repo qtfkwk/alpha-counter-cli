@@ -1,9 +1,8 @@
-use clap::Parser;
-use alpha_counter::AlphaCounter;
+use {alpha_counter::AlphaCounter, clap::Parser, clap_cargo::style::CLAP_STYLING};
 
 /// Alphabetic Counter (A, B, C, ..., X, Y, Z, AA, AB, AC, ...)
 #[derive(Parser)]
-#[command(version, name = "alpha-counter")]
+#[command(version, name = "alpha-counter", max_term_width = 80, styles = CLAP_STYLING)]
 struct Cli {
     /// Kind (upper, lower)
     #[clap(short, long, default_value = "upper")]
@@ -27,7 +26,9 @@ fn main() -> Result<(), String> {
     let cli = Cli::parse();
 
     if !["upper", "lower"].contains(&cli.kind.as_str()) {
-        return Err(String::from("Kind option must be either \"upper\" or \"lower\"."));
+        return Err(String::from(
+            "Kind option must be either \"upper\" or \"lower\".",
+        ));
     }
 
     let ac = if let Some(alphabet) = cli.alphabet {
